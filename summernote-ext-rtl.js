@@ -30,14 +30,6 @@
                     contents: '<i class="fa fa-paragraph"/><i class="fa fa-caret-left"/>',
                     tooltip: 'Change text direction to the right',
                     click: function() {
-                        function clearSelection() {
-                            if (document.selection) {
-                                document.selection.empty();
-                            } else if (window.getSelection) {
-                                window.getSelection().removeAllRanges();
-                            }
-                        }
-
                         function getHTMLOfSelection() {
                             var range;
                             if (document.selection && document.selection.createRange) {
@@ -79,7 +71,6 @@
                                 $(elementsClass).parent().css('direction',direction);
                             }
                         }
-                        clearSelection();
                     }
                 });
                 // create jQuery object from button instance.
@@ -97,14 +88,6 @@
                     contents: '<i class="fa fa-caret-right"/><i class="fa fa-paragraph"/>',
                     tooltip: 'Change text direction to the left',
                     click: function() {
-                        function clearSelection() {
-                            if (document.selection) {
-                                document.selection.empty();
-                            } else if (window.getSelection) {
-                                window.getSelection().removeAllRanges();
-                            }
-                        }
-
                         function getHTMLOfSelection() {
                             var range;
                             if (document.selection && document.selection.createRange) {
@@ -141,7 +124,6 @@
                                 $(elementsClass).parent().css('direction',direction);
                             }
                         }
-                        clearSelection();
                     }
                 });
                 // create jQuery object from button instance.
