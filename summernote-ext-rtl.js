@@ -28,7 +28,7 @@
                 // create button
                 var button = ui.button({
                     contents: '<i class="fa fa-paragraph"/><i class="fa fa-caret-left"/>',
-                    tooltip: 'Change text direction to the right',
+                    tooltip: 'שנה כיוון טקסט לימין',
                     click: function() {
                         function getHTMLOfSelection() {
                             var range;
@@ -86,7 +86,7 @@
                 // create button
                 var button = ui.button({
                     contents: '<i class="fa fa-caret-right"/><i class="fa fa-paragraph"/>',
-                    tooltip: 'Change text direction to the left',
+                    tooltip: 'שנה כיוון טקסט לשמאל',
                     click: function() {
                         function getHTMLOfSelection() {
                             var range;
